@@ -5,15 +5,13 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/index.js"
+    "dev": "node src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.24",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "@types/node": "^20.11.24"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.9.0",

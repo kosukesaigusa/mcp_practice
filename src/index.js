@@ -1,4 +1,4 @@
-import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 
@@ -7,7 +7,6 @@ const server = new McpServer({
   version: "1.0.0"
 });
 
-// Add an addition tool
 server.tool("add",
   { a: z.number(), b: z.number() },
   async ({ a, b }) => ({
@@ -15,7 +14,6 @@ server.tool("add",
   })
 );
 
-// Add a subtraction tool
 server.tool("subtract",
   { a: z.number(), b: z.number() },
   async ({ a, b }) => ({

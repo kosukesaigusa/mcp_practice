@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "Demo": {
+      "command": "node",
+      "args": [
+        "./src/index.js"
+      ]
+    }
+  }
+}
